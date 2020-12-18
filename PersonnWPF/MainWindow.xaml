@@ -1,0 +1,20 @@
+﻿<Window x:Class="PersonnWPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PersonnWPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="711" Width="1081">
+    <Grid x:Name="___No_Name_" Margin="72,74,737,72">
+        <DataGrid x:Name="dataGridd" Margin="10,75,24,178"  ItemsSource="{Binding Path=DefaultView}" AutoGenerateColumns="True"></DataGrid>
+
+        <Button x:Name="SaveButton"  Content="Save" Margin="265,370,-61,124" ></Button>
+        <Button Content="Search" HorizontalAlignment="Left" Margin="540,85,-361,0" VerticalAlignment="Top" Width="85" Height="30" Click="Button_Click"/>
+        <CheckBox IsChecked="False" x:Name="textFileCB" Content="Text File" Margin="345,75,-221,434"/>
+        <CheckBox IsChecked="False" x:Name="ExcelFileCB" Content="Excel File" Margin="345,105,-221,374"/>
+        <TextBox x:Name="TextBox1" HorizontalAlignment="Left" Height="196" Margin="345,160,-326,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="245"/>
+
+
+    </Grid>
+</Window>
