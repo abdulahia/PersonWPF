@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NABA" Class="SqlCDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="NABA" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
   <Connection Mode="AppSettings" ConnectionString="Data Source=STU-GJHLMQ2\SQLEXPRESS;Initial Catalog=NABA;Integrated Security=True" SettingsObjectName="PersonnWPF.Properties.Settings" SettingsPropertyName="NABAConnectionString" Provider="System.Data.SqlClient" />
   <Table Name="dbo.Person" Member="Persons">
     <Type Name="Person">
       <Column Name="FirstName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
-      <Column Name="LastName" Type="System.String" DbType="NChar(10)" CanBeNull="true" />
+      <Column Name="LastName" Type="System.String" DbType="NChar(10) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
     </Type>
   </Table>
 </Database>
